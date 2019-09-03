@@ -3,7 +3,7 @@ module Api::V1
     before_action :set_user, only: [:attend]
     before_action :set_admin, only: [:create]
     
-    # POST user/:id/attend
+    # PUT user/:id/attend
     def attend
       if @user.update(attended: true)
         render json: { message: "success"}, status: 200
