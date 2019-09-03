@@ -2,7 +2,7 @@
 
  # ROUTES
   - POST `api/v1/admins` { parameters: `name`, `email`, `password` } (creates an admin user)
-  - POST `/admins/login` { parameters: `email`, `password` } (logs in user)
+  - POST `api/v1/admins/login` { parameters: `email`, `password` } (logs in user)
   - GET `api/v1/events` (gets all events)
   - GET `api/v1/events/{:event_id}` { gets an event }
   - POST `api/v1/events` { parameters: `name` } (admin must be signed in)
