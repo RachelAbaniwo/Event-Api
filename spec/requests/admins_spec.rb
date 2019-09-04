@@ -10,7 +10,7 @@ describe "Admin API", :type => :request do
   end
   
   # TEST ADMIN SIGN UP
-  it "creates a an admin if admin provides valid parameters" do
+  it "creates an admin if admin provides valid parameters" do
 
     entry = get_entries("valid_new_user")
     post "/api/v1/admins", params: get_entries("valid_new_user")
@@ -126,7 +126,7 @@ describe "Admin API", :type => :request do
     expect(error).to be_truthy
   end
 
-  it "doesn't login a admin if admin password is not provided" do
+  it "doesn't login an admin if admin password is not provided" do
     
     new_admin = Admin.create(get_entries("valid_new_user"))
     post "/api/v1/admins/login", params: get_entries("no_password_sign_in")
