@@ -1,7 +1,7 @@
 module Api::V1
   class UsersController < ApplicationController
     before_action :set_user, only: [:attend]
-    before_action :set_admin, only: [:create]
+    before_action :set_admin, only: [:attend]
     
     # PUT user/:id/attend
     def attend
