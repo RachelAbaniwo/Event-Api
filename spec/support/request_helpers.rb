@@ -15,7 +15,8 @@ module RequestHelpers
       wrong_password: { email: 'lily.grant@gmail.com', password: 'lilygranny' },
       wrong_email: { email: 'mike.grant@gmail.com', password: 'lilygrant' },
       no_email_sign_in: { password: 'lilygrant' },
-      no_password_sign_in: { email: 'lily.grant@gmail.com' }
+      no_password_sign_in: { email: 'lily.grant@gmail.com' },
+      valid_event: { name: 'event_name'}
     }
     entries[entry.to_sym]
   end

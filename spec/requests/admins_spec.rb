@@ -118,7 +118,7 @@ describe "Admin API", :type => :request do
   it "doesn't login admin if admin email is not provided" do
     
     new_admin = Admin.create(get_entries("valid_new_user"))
-    post "//api/v1/admins/login", params: get_entries("no_email_sign_in")
+    post "/api/v1/admins/login", params: get_entries("no_email_sign_in")
     error = json["error"]
 
     expect(response).not_to be_successful

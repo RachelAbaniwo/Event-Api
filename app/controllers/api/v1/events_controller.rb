@@ -45,7 +45,7 @@ module Api::V1
 
       def set_admin
         header = get_header()
-        @admin = Authorize.authorize_request(header)
+        @admin = authorize_request(header)
       end
 
       def set_event
